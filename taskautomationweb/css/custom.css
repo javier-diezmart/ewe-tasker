@@ -1,0 +1,146 @@
+
+/** NAVBAR AND FOOTER*/
+
+.navbar-nav{
+	margin: 7.5px -15px;
+}
+
+.site-header{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+html, body, #wrapper{
+	height: 100%;
+}
+
+.site-footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/** RULES AND CHANNELS LIST */
+
+.rule-item{
+	margin-bottom: 5%;
+}
+
+/** Rule fragment */
+
+.fragment-title{
+	text-align: center;
+}
+
+.rule-fragment{
+	height: 148px;
+	line-height:148px;
+}
+
+.channel-fragment{
+	height: 148px;
+	line-height:148px;
+}
+
+/** Rule state button */
+
+.btn-activate-div{
+	height: 175px;
+}
+
+.btn-activate{
+	vertical-align: middle;
+}
+
+/** Channel Image */
+
+.img-channel{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+ 	margin-left: -64px; /* width divided by 2 */
+	margin-top: -64px; /* height divided by 2 */
+}
+
+/** Arrow Image */
+
+.img-arrow{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/** Actions Rules Buttons */
+
+.btn-new{
+	margin-bottom: 5%;
+}
+
+.btn-rules-action{
+	vertical-align: middle;
+}
+
+.btn-channel-action{
+	vertical-align: middle;
+}
+
+/** Written rule */
+
+.rule-info{
+	vertical-align: middle;
+	text-align: center;
+}
+
+/** ADD NEW CHANNEL */
+
+.entry:not(:first-of-type)
+{
+    margin-top: 10px;
+}
+
+.glyphicon
+{
+    font-size: 12px;
+}
+
+/** DRAG & DROP */
+
+#drag {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #3498db;
+	margin: 1.5em auto 0;
+}
+
+#drop-event, #drop-action {
+	width: 200px;
+	height: 200px;
+	background:#ecf0f1;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 2px solid #bdc3c7;
+	margin: 1em auto 0;
+	vertical-align: middle;
+}
+
+#drop-event img, #drop-action img{
+	vertical-align: middle;
+	margin-top: -8%;
+}
+
+.drop-titles{
+	text-align: center;
+}
+
+.fragment-arrow{
+	vertical-align: middle;
+	text-align: center;
+	height: 267px;
+}
+
+.fragment-arrow img{
+	margin-top: 35%;
+}

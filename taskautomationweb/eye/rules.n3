@@ -1,0 +1,18 @@
+@prefix string: <http://www.w3.org/2000/10/swap/string#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ewe: <http://gsi.dit.upm.es/ontologies/ewe/ns/#> .
+@prefix ewe-presence: <http://gsi.dit.upm.es/ontologies/ewe-connected-home-presence/ns/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ewe-smarttv: <http://gsi.dit.upm.es/ontologies/ewe-connected-home-smarttv/ns/#> .
+
+{ 
+	?event rdf:type ewe-presence:PresenceDetectedAtDistance. # Received event of type PresenceDetectedAtDistance
+	?event ewe:sensorID ?sensorID. # With a sensor ID
+	?sensorID string:equalIgnoringCase '1a2b3c'. # Check if that sensorID is equal to a predefined ID.
+	?event!ewe:distance math:lessThan 1.  # Check if the distance to that event is less than a predefined distance.
+}
+=>
+{ 
+	ewe-smarttv:SmartTv rdf:type ewe-smarttv:SwitchOn . # Switch On the Smart TV.
+}.
